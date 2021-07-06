@@ -357,7 +357,7 @@ void loop() {
   matrix.print(sarray);
   
           Serial.print(String("arrayyyyyyyyyyy:  ")+sarray+String("   \n"));
-  if(--x < -390) {
+  if(--x < -390) {//reqemi artiranda ledde geden stringin miqdarı artır
     x = matrix.width();
     if(++pass >= 3) pass = 0;
     matrix.setTextColor(colors[pass]);
